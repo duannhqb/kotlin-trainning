@@ -11,6 +11,8 @@ fun main() {
     student.getCategory()
     student.getMyInfo()
     student.getAllAfterChange()
+    student.language = "english"
+    student.getLanguage()
 }
 
 open class People(protected open val firstName: String, protected open val lastName: String) {
@@ -22,6 +24,8 @@ open class People(protected open val firstName: String, protected open val lastN
 class Student(private val job: String, firstName: String, lastName: String) : People(firstName, lastName) {
     override val firstName = super.firstName.toUpperCase();
     override val lastName = super.lastName.toUpperCase();
+
+    lateinit var language: String
 
     override fun getName() {
         println("Please call method 'getMyInfo' to show this info")
@@ -40,4 +44,6 @@ class Student(private val job: String, firstName: String, lastName: String) : Pe
         println("My name has changed from ${super.lastName} ${super.firstName} to ${this.lastName} ${this.firstName}")
         println("and my job not change, still is ${this.job}")
     }
+
+    fun getLanguage(): Unit = println("I can speak by $language")
 }
