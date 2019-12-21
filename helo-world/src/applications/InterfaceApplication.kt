@@ -7,4 +7,7 @@ fun main() {
     bat.eat()
     bat.walk()
     bat.fly()
+    bat.getAgeOfBat()
+    bat.setAgeOfBat(25)
+    bat.getAgeOfBat()
 }

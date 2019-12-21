@@ -14,4 +14,6 @@ interface Animal {
 
     fun eat()
 
+    var age: Int
+
 }
