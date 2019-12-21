@@ -1,4 +1,4 @@
-package main
+package main.applications
 
 fun main() {
     val people = People("Duan", "Ngo Huu")

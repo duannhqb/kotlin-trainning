@@ -1,4 +1,4 @@
-package main
+package main.applications
 
 fun main(args: Array<String>) {
     println(addTwoInts1(1, 2))
