@@ -32,7 +32,7 @@ fun main(args: Array<String>) {
     }
 
     var c: Char = 'a'
-    var resultWhen: String = when(c) {
+    var resultWhen: String = when (c) {
         'a' -> "aaaaaaaaaaaaaaaaaaa"
         'b' -> "bbbbbbbbbbbbbbbbbbbbb"
         else -> "nooooooooooooooooo"
@@ -41,7 +41,7 @@ fun main(args: Array<String>) {
     println(resultWhen)
 
     var b2: Int = 1
-    val resultB: String = when(b2) {
+    val resultB: String = when (b2) {
         1 -> "1 is number chosen"
         2 -> "2 is number chosen"
         else -> "no number chosen"
@@ -50,11 +50,11 @@ fun main(args: Array<String>) {
     println(resultB)
 
     var ggg: Boolean = false
-    if(ggg) {
+    if (ggg) {
         println(">>>>>>>>>>>>>>>>>>> $ggg")
     }
 
-    fun checkNum(inputNumber: Number) = when(inputNumber) {
+    fun checkNum(inputNumber: Number) = when (inputNumber) {
         0 -> println("0000000000000000")
         1 -> println("1111111111111111")
         2, 3 -> println(">>>>>>>>>>>>>>>>>>> 2 or 3")
@@ -74,6 +74,7 @@ fun main(args: Array<String>) {
     for (number in intNumbers) {
         println("number = $number")
     }
+
     println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 //    for i
     for (index in intNumbers.indices) {
